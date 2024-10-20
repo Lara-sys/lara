@@ -1,0 +1,104 @@
+<!DOC html>
+<html lang="fr">
+   <head>
+       <meta charset="utf-8"> 
+       <meta name="viewport" content="width=device-width , initial-scale=1.0 ">
+
+       <title>Larissa-portfolio</title>
+       <link rel="stylesheet" href="style.css">
+       <style>
+       </style>
+   </head>
+   <body>
+    <header class="header">
+        <a href="#" class="logo"><span>Lari</span>ssa</a>
+        <nav class="navbar">
+            <ul>
+                <a href="#" class="active">A propos</a></li>
+                <a href="#">Projets</a></li>
+                <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+            <section class="home">
+                <div class="home-content">
+                    <h3> Hi, </h3>
+                    <h1>Je m'appelles <span> Larissa <br></span> Coiffeuse / Maquilleuse</h1>
+                    <p> Spécialiste de la mise en beauté, j'ai à coeur de vous offrir une 
+                        prestation sur-mesure et mon expertise dans le domaine du mariage.
+                    Pour toutes les femme. Parce que vous le méritez.</p>
+                </div>
+                <div class="img-box">
+                    <img src="Lara3.png" alt="">
+                </div>
+            </section>
+        <section class="project">
+            <h2>~ Mon Travail ~</h2>
+            <div class="my-work">
+                <h3>Coiffure</h3>
+                <img src="coiffure1.jpg" alt="">
+                <img src="coiffure 2.jpg" alt="">
+                <img src="maquillage 4.jpg" alt="">
+                <h3>Maquillage</h3>
+                <img src="maquillage1.jpg" alt="">
+                <img src="maquillage2.jpg" alt="">
+                <img src="maquillage 5.jpg" alt="">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>~ Contactez-Moi ~</h2>
+            <form 
+            name="my form"
+            action="/file.php"
+            onsubmit="return validateform()"
+            method="post">
+            <table class="form-style">
+                <tr>
+                    <td>
+                        <label>
+                            Votre  Nom <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" class="long">
+                        <span class="error" id="errorname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Votre adresse e-mail <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" class="long">
+                        <span class="error" id="erroremail"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Message <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="message" class="long field-textarea"></textarea>
+                    <span class="error" id="errormsg"></span>     
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Envoyez">
+                        <input type="reset" value="Réinitialiser">
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </section>
+    <footer>
+        <p>Copyright 2024 Larissa - Tous droits reservés. </p>
+    </footer>
+    <script src="script.js">
+    </script>
+   </body>
+</html>
